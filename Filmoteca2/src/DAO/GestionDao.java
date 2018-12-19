@@ -44,7 +44,7 @@ public class GestionDao {
     
      public void insertatPelicula(Pelicula p) throws SQLException, ExcepcionPelicula{
         
-        if(!existePelicula(p)){
+        if(existePelicula(p)){
             
             throw new ExcepcionPelicula("Error: la pelicula no existe");
             
